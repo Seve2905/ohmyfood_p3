@@ -110,9 +110,9 @@ h1 {
 }
 
 .loader{
-    -webkit-animation: spin 1s linear infinite alternate;
-    -o-animation: spin 1s linear infinite alternate;
-    animation: spin 1s linear infinite alternate;
+    -webkit-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
     border-top: 10px solid black;
     border-bottom: 10px solid black;
     border-left: 10px solid #9356DC;
@@ -126,6 +126,7 @@ h1 {
     left:0;
     right: 0;
     bottom: 0;
+    
     
     
 }
@@ -147,9 +148,7 @@ h1 {
         transform: rotate(360deg);
     }
 }
-.loader::after{
-    display: none;
-}
+
     
     
 
