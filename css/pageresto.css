@@ -150,43 +150,52 @@ h1 {
 
 }
 
-.sizeblocbtn {
-    height: auto;
-    width: auto;
-    margin-left: -10px;
-    margin-top: 30px;
-    position: relative;
-    left: -20px;
-
-}
-
 .titreresto {
-    font-size: 24px;
-    margin-left: 10%;
+    font-size: 22px;
     padding-top: 20px;
-    
+    font-family: "Shrikhand", cursive;
+
 }
 
-.heart {
-    font-size: 24px;
-    padding-left: 20px;
+.heart1 {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    font-size: 28px;
+    color: gray;
+
 }
 
-.heart:hover {
-    color: #9356DC;
-    cursor: pointer;
-    transform: scale(1.05);
+.heart2 {
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    top: 2.5rem;
+    right: 2rem;
+    font-size: 28px;
+    opacity: 0;
+
+}
+
+.titre_heart:hover .heart1 {
+    opacity: 0;
+}
+
+.titre_heart:hover .heart2 {
+    opacity: 1;
+
 }
 
 .sizebordertitre {
     width: 50px;
-    margin-left: 10%;
+    margin-left: 15px;
     border-bottom: 3px solid #99E2D0;
 }
 
 .titreentrees {
     font-size: 18px;
-
 }
 
 .sizeblocbtn1,
@@ -198,63 +207,132 @@ h1 {
     margin-top: 30px;
     position: relative;
     left: -20px;
-
 }
 
 @keyframes bloc {
     0% {
         transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
 
     }
 
     100% {
         transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
     }
 }
 
+/* animation fill mode pour que l'animation commence dès le chargement de la page */
 .sizeblocbtn1>.allbtn {
-    animation: bloc 2s linear;
+    animation: bloc 2s;
+    -webkit-animation: bloc 2s;
+    -moz-animation: bloc 2s;
+    -o-animation: bloc 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
     animation-delay: 0ms;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0;
 }
 
 .sizeblocbtn2>.allbtn {
-    animation: bloc 2s linear;
+    animation: bloc 2s;
+    -webkit-animation: bloc 2s;
+    -moz-animation: bloc 2s;
+    -o-animation: bloc 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
     animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    -o-animation-delay: 500ms;
 }
 
 .sizeblocbtn3>.allbtn {
-    animation: bloc 2s linear;
+    animation: bloc 2s;
+    -webkit-animation: bloc 2s;
+    -moz-animation: bloc 2s;
+    -o-animation: bloc 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
     animation-delay: 900ms;
+    -webkit-animation-delay: 900ms;
+    -moz-animation-delay: 900ms;
+    -o-animation-delay: 900ms;
 }
 
+/* overflow hidden pour masquer ce qui est en dehors du boutton */
 .allbtn {
     height: 50px;
-    width: 90%;
-    box-shadow: 1px 1px 10px -1px grey;
+    width: 100%;
+    box-shadow: 2px 1px 16px -3px grey;
     border-radius: 15px;
     font-size: 12px;
     cursor: pointer;
     margin-bottom: 20px;
-    line-height: 0;
+    padding-top: 0;
     list-style: none;
-    margin-left: 5%;
-    padding-top: 1%;
-
+    padding-top: 0.5%;
+    overflow: hidden;
 
 }
 
+.allbtn:hover .buttonnone {
+    margin-right: 0;
+    visibility: visible;
+}
+
+/* shrink pour retrécir la div suivant la place */
 .buttonnone {
-    display: none;
+    flex-shrink: 0;
+    height: 51px;
+    width: 3rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: #99E2D0;
+    margin-right: -3rem;
+    transition: margin-right 0.5s;
+    position: relative;
+    top: -18px;
+    color: white;
+    left: 14px;
+
 }
+
 
 .textallbtn {
     margin-left: 3%;
     font-weight: bold;
+    margin-top: 0.5%;
+    margin-bottom: 0;
 }
 
 .detailtextallbtn {
+    display: flex;
+    justify-content: flex-start;
     margin-left: 3%;
     margin-right: 3%;
+
+}
+
+.detailtextallbtn p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.priceallbtn {
+    display: flex;
+    margin-left: auto;
+    font-weight: bold;
 }
 
 .btnexplor {
@@ -296,12 +374,10 @@ h1 {
 
 .sizeliensfooter {
     height: 30px;
-
-
 }
 
 .liensfooter1,
-liensfooter2,
+.liensfooter2,
 .liensfooter {
     color: white;
     font-size: 12px;
@@ -316,9 +392,73 @@ liensfooter2,
 .liensfooter2 {
     margin-left: 10px;
     list-style-type: none;
-
 }
 
 ul {
     list-style-type: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .bloc123 {
+        top: 200px
+    }
+
+    .sizeblocbtn1,
+    .sizeblocbtn2,
+    .sizeblocbtn3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0px;
+        left: 0;
+    }
+
+    .sizebordertitre{
+        margin-left: 40px;
+    }
+
+    .allbtn {
+        margin-right: 20px;
+    }
+
+    .buttonnone {
+        top: -20px
+    }
+
+    .btnexplor {
+        width: 25%;
+        margin-bottom: 50px;
+    }
+
+    .return {
+        margin-right: 20px;
+    }
+
+    .alertnew::before{
+        right: 60px;
+    }
+}
+
+@media screen and (min-width: 810px) {
+
+    /* .sizebloc1respons{
+        height: 70px;
+    } */
+    .sizebloc1respons>.allbtn {
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1060px) {
+    .buttonnone {
+        top: -21px;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .buttonnone {
+        top: -22px;
+    }
 }

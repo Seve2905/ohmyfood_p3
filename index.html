@@ -9,21 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=famille=Shrikhand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&famille=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&famille=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/3fa329aa5f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="loader"></div>
-
+  <div id="loader">
+  </div>
   <header class="logo shrikhand textcenter">
     <h1>ohmyfood</h1>
   </header>
   <nav>
     <div class="backgrey flexcentre">
       <i class="fa-solid fa-location-dot icon"></i>
-      <p class="location">Paris, Belleville paris</p>
+      <p class="location">Paris, Belleville</p>
     </div>
     <div class="sizeexplor">
       <h2 class="explor textcenter">Réservez le menu qui<br>vous convient</h2>
@@ -31,9 +32,9 @@
       <a href="#blocresto" class="btnexplor flexcentre backprim">Explorez nos restaurants</a>
     </div>
   </nav>
-  <main class="container">
+  <main id="container">
     <section id="fonction">
-      <h2>Fonctionnement</h2>
+      <h2 class="titrefonction">Fonctionnement</h2>
       <ol class="sizeblocbtn">
         <li class="btn123 flexbetween backgrey">
           <i class="fa-duotone fa-1 iconnum flexcentre"></i>
@@ -53,58 +54,65 @@
       </ol>
     </section>
     <section id="blocresto">
+      <h2 class="titreresto">Restaurants</h2>
       <div class="bloc flexcolumnaround backgrey">
-        <h2 class="titreresto">Restaurants</h2>
-      <div class="cardresto">
-        <a href="lapalettedugout.html"><img class="imgresto"  src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"></a>
-        <p class="alertnew backtert">Nouveau</p>
-      </div>
-      <div class="detailresto">
-        <h4 class="titredetailresto">La palette du goût</h4>
-        <i class="fa-regular fa-heart heart1"></i>
-        <i class="fa-solid fa-heart heart2"></i>
-        <p>Ménilmontant</p>
-      </div>
-      <div class="cardresto">
-        <a href="lanoteenchantee.html"><img class="imgresto" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"></a>
-        <p class="alertnew backtert">Nouveau</p>
+        <div class="cardresto">
+          <a href="lapalettedugout.html"><img class="imgresto"
+              src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"></a>
+          <p class="alertnew"></p>
         </div>
-      <div class="detailresto">
-        <h4 class="titredetailresto">La note enchantée</h4>
-        <i class="fa-regular fa-heart heart1"></i>
-        <i class="fa-solid fa-heart heart2"></i>
-        <p>Charonne</p>
-      </div>
-      <div class="cardresto">
-        <a href="alafrancaise.html"><img class="imgresto" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"></a>
+        <div class="detailresto">
+          <h4 class="titredetailresto">La palette du goût</h4>
+          <i class="fa-regular fa-heart heart1"></i>
+          <i class="fa-solid fa-heart heart2"></i>
+          <p>Ménilmontant</p>
         </div>
-      <div class="detailresto">
-        <h4 class="titredetailresto">A la française</h4>
-        <i class="fa-regular fa-heart heart1"></i>
-        <i class="fa-solid fa-heart heart2"></i>
-        <p>Cité rouge</p>
+        <div class="cardresto">
+          <a href="lanoteenchantee.html"><img class="imgresto" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="La note enchantée"></a>
+          <p class="alertnew"></p>
+        </div>
+        <div class="detailresto">
+          <h4 class="titredetailresto">La note enchantée</h4>
+          <i class="fa-regular fa-heart heart1"></i>
+          <i class="fa-solid fa-heart heart2"></i>
+          <p>Charonne</p>
+        </div>
       </div>
-      <div class="cardresto">
-        <a href="Ledelicedessens.html"><img class="imgresto" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"></a>
-      </div>
-      <div class="detailresto">
-        <h4 class="titredetailresto">Le délice des sens</h4>
-        <i class="fa-regular fa-heart heart1"></i>
-        <i class="fa-solid fa-heart heart2"></i>
-        <p>Folie méricourt</p>
-      </div>
+      <div class="bloc flexcolumnaround backgrey">
+        <div class="cardresto">
+          <a href="alafrancaise.html"><img class="imgresto"
+              src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"></a>
+        </div>
+        <div class="detailresto">
+          <h4 class="titredetailresto">A la française</h4>
+          <i class="fa-regular fa-heart heart1"></i>
+          <i class="fa-solid fa-heart heart2"></i>
+          <p>Cité rouge</p>
+        </div>
+        <div class="cardresto">
+          <a href="Ledelicedessens.html"><img class="imgresto"
+              src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="Le délice des sens"></a>
+        </div>
+        <div class="detailresto">
+          <h4 class="titredetailresto">Le délice des sens</h4>
+          <i class="fa-regular fa-heart heart1"></i>
+          <i class="fa-solid fa-heart heart2"></i>
+          <p>Folie méricourt</p>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer flexcolumnstart">
     <h1 class="titrefooter">ohmyfood</h1>
-      <ul>
-        <li class="sizeliensfooter"><i class="fa-solid fa-utensils"></i><a href="#" class="liensfooter1">Proposer un restaurant</a></li>
-        <li class="sizeliensfooter"><i class="fa-solid fa-handshake-angle "></i><a href="#" class="liensfooter2">Devenir partenaire</a></li>
-        <li class="sizeliensfooter"><a href="#" class="liensfooter">Mentions légales</a></li>
-        <li class="sizeliensfooter"><a href="mailto:ohmyfoodP3@outlook.fr?" class="liensfooter">Contact</a></li>
-      </ul>
-</footer>
-
-
+    <ul>
+      <li class="sizeliensfooter"><i class="fa-solid fa-utensils"></i><a href="#" class="liensfooter1">Proposer un
+          restaurant</a></li>
+      <li class="sizeliensfooter"><i class="fa-solid fa-handshake-angle "></i><a href="#" class="liensfooter2">Devenir
+          partenaire</a></li>
+      <li class="sizeliensfooter"><a href="#" class="liensfooter">Mentions légales</a></li>
+      <li class="sizeliensfooter"><a href="mailto:ohmyfoodP3@outlook.fr" class="liensfooter">Contact</a></li>
+    </ul>
+  </footer>
 </body>
