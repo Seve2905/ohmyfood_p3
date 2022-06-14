@@ -508,6 +508,7 @@ h1 {
     }
 }
 
+
 @media screen and (min-width: 1240px) {
     .alertnew::before {
         right: 0;
@@ -526,3 +527,4 @@ h1 {
     }
     
 }
+
