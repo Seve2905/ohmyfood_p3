@@ -306,13 +306,10 @@ h1 {
     cursor: pointer;
     margin-left: 18px;
     margin-right: 10px;
-
 }
 
 .alertnew {
     position: relative;
-
-
 }
 
 .alertnew::before {
@@ -370,11 +367,11 @@ h1 {
 }
 /* background -clip: "text" pour que l'arrière-plan soit limité au texte en premier plan. */
 
-.detailresto:hover .heart1 {
+.heart1:hover {
     opacity: 0;
 }
 
-.detailresto:hover .heart2 {
+.heart2:hover {
     opacity: 1;
     transform: scale(1.2);
 }
