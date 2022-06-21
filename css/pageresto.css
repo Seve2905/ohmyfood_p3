@@ -179,11 +179,11 @@ h1 {
 
 }
 
-.titre_heart:hover .heart1 {
+.heart1:hover {
     opacity: 0;
 }
 
-.titre_heart:hover .heart2 {
+.heart2:hover {
     opacity: 1;
 
 }
@@ -287,7 +287,7 @@ h1 {
 
 .allbtn:hover .buttonnone {
     margin-right: 0;
-    visibility: visible;
+    visibility: visible; 
 }
 
 /* shrink pour retrécir la div suivant la place */
@@ -303,9 +303,17 @@ h1 {
     top: -18px;
     color: white;
     left: 14px;
-
 }
 
+.turn {
+    transition-delay: 0s;
+    transition-duration: 1.2s;
+    transition-property: transform;
+}
+
+.buttonnone:hover>.turn {
+    transform: rotate(360deg);
+}
 
 .textallbtn {
     margin-left: 3%;
