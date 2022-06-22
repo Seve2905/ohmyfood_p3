@@ -305,14 +305,17 @@ h1 {
     left: 14px;
 }
 
-.turn {
-    transition-delay: 0s;
-    transition-duration: 1.2s;
-    transition-property: transform;
+@keyframes spincheck{
+    0%{
+        transform: rotate(-200deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
-.buttonnone:hover>.turn {
-    transform: rotate(360deg);
+.allbtn:hover .buttonnone>.turn{
+    animation: spincheck 0.5s ease-in-out;
 }
 
 .textallbtn {
